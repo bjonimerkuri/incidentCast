@@ -1,0 +1,25 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "incidentcast-api",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-01-20",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "incidentcast-db",
+			"database_id": "799c384f-2e0d-455d-b9e9-92d18ba8e9ee"
+		}
+	],
+	"kv_namespaces": [
+		{
+			"binding": "CACHE",
+			"id": "b1e198c2f3674526b98ca84ccfc3d96a"
+		}
+	],
+	"ai": {
+		"binding": "AI"
+	}
+}
